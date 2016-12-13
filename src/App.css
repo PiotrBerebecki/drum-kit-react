@@ -1,24 +1,187 @@
-.App {
+/* ==================== GENERAL STYLES ==================== */
+@font-face {
+  font-family: "ShoCard";
+  src: url(https://raw.githubusercontent.com/PiotrBerebecki/drum-kit-vanilla-javascript/master/assets/font/Sho-CardCapsNF.ttf);
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/PiotrBerebecki/drum-kit-vanilla-javascript/master/assets/image/background-wooden-stage.jpg) no-repeat center center fixed;
+  font-family: ShoCard, Arial, sans-serif;
+  font-size: 1em;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+/* ==================== DRUM KIT STYLES ==================== */
+#drumkit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 70%;
+}
+
+@media screen and (min-width: 900px) {
+  #drumkit {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+.button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.playing {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  background-image: -webkit-radial-gradient(
+    rgba(255,255,255,1.00) 60%, 
+    rgba(255,255,255,0.65) 62%, 
+    rgba(255,255,255,0.50) 66%,
+    rgba(255,255,255,0.20) 67%,
+    rgba(255,255,255,0.03) 70%,
+    rgba(255,255,255,0.00) 73%
+  );
+  background-image: radial-gradient(
+    rgba(255,255,255,1.00) 60%, 
+    rgba(255,255,255,0.65) 62%, 
+    rgba(255,255,255,0.50) 66%,
+    rgba(255,255,255,0.20) 67%,
+    rgba(255,255,255,0.03) 70%,
+    rgba(255,255,255,0.00) 73%
+  );
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91%;
+  height: 91%;
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   text-align: center;
+  color: rgba(118,108,66,0.44);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.text-on-dark {
+  color: rgba(240, 240, 240, 0.7);
+  top: 50%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#one {
+  width: 20vw;
+  height: 20vw;
+  left: 9%;
+  top: 4%;
+  z-index: 3;
 }
 
-.App-intro {
-  font-size: large;
+#two {
+  width: 14.5vw;
+  height: 14.5vw;
+  z-index: 2;
+  left: 1%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#three {
+  width: 14vw;
+  height: 14vw;
+  left: -4.5%;
+  z-index: 2;
+}
+
+#four {
+  width: 22vw;
+  height: 22vw;
+  left: -12%;
+  top: 4%;
+  z-index: 3;
+}
+
+#five {
+  width: 17vw;
+  height: 17vw;
+  left: 2%;
+  top: -2%;
+  z-index: 3;
+}
+
+#six {
+  width: 16vw;
+  height: 16vw;
+  left: -5%;
+  top: -13%;
+  z-index: 2;
+}
+
+#seven {
+  width: 26vw;
+  height: 26vw;
+  left: -11.5%;
+  top: -21%;
+  z-index: 1;
+}
+
+#eight {
+  width: 20vw;
+  height: 20vw;
+  left: -19%;
+  top: -6%;
+  z-index: 1;
 }
