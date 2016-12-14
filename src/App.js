@@ -6,16 +6,25 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      soundSrc: [
+      sounds: [
         { 
           id: 'one',
-          src: '../public/assets/image/'
+          imageSrc: './assets/image/crash.png',
+          audioSrc: './assets/sound/crash.mp3',
+          audioObj: null
+        },
+        { 
+          id: 'two',
+          imageSrc: './assets/image/drum.png',
+          audioSrc: './assets/sound/big-rack-tom.mp3',
+          audioObj: null
         }
       ]
     };
   }
   
   render() {
+    console.log(this.state.sounds[0]);
     return (
       <section id="drumkit">
         <Button />

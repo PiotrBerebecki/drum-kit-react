@@ -1,14 +1,14 @@
 /* ==================== GENERAL STYLES ==================== */
 @font-face {
   font-family: "ShoCard";
-  src: url(https://raw.githubusercontent.com/PiotrBerebecki/drum-kit-vanilla-javascript/master/assets/font/Sho-CardCapsNF.ttf);
+  src: url(../public/assets/font/Sho-CardCapsNF.ttf);
 }
 
 html {
   box-sizing: border-box;
   margin: 0;
   height: 100%;
-  background: url(https://raw.githubusercontent.com/PiotrBerebecki/drum-kit-vanilla-javascript/master/assets/image/background-wooden-stage.jpg) no-repeat center center fixed;
+  background: url(../public/assets/image/background-wooden-stage.jpg) no-repeat center center fixed;
   font-family: ShoCard, Arial, sans-serif;
   font-size: 1em;
 }
