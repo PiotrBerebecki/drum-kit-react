@@ -1,14 +1,14 @@
 /* ==================== GENERAL STYLES ==================== */
 @font-face {
   font-family: "ShoCard";
-  src: url(../public/assets/font/Sho-CardCapsNF.ttf);
+  src: url(https://raw.githubusercontent.com/PiotrBerebecki/drum-kit-vanilla-javascript/master/assets/font/Sho-CardCapsNF.ttf);
 }
 
 html {
   box-sizing: border-box;
   margin: 0;
   height: 100%;
-  background: url(../public/assets/image/background-wooden-stage.jpg) no-repeat center center fixed;
+  background: url(https://raw.githubusercontent.com/PiotrBerebecki/drum-kit-vanilla-javascript/master/assets/image/background-wooden-stage.jpg) no-repeat center center fixed;
   font-family: ShoCard, Arial, sans-serif;
   font-size: 1em;
 }
@@ -20,32 +20,19 @@ html {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 
 /* ==================== DRUM KIT STYLES ==================== */
 #drumkit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
@@ -54,8 +41,7 @@ body {
 
 @media screen and (min-width: 900px) {
   #drumkit {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
 }
 
@@ -64,23 +50,13 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition: all 0.05s;
   transition: all 0.05s;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
 
 .playing {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-  background-image: -webkit-radial-gradient(
-    rgba(255,255,255,1.00) 60%, 
-    rgba(255,255,255,0.65) 62%, 
-    rgba(255,255,255,0.50) 66%,
-    rgba(255,255,255,0.20) 67%,
-    rgba(255,255,255,0.03) 70%,
-    rgba(255,255,255,0.00) 73%
-  );
+  transform: scale(0.98);
   background-image: radial-gradient(
     rgba(255,255,255,1.00) 60%, 
     rgba(255,255,255,0.65) 62%, 
@@ -94,8 +70,7 @@ body {
 img {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin-left: auto;
@@ -107,81 +82,79 @@ img {
 h3 {
   position: absolute;
   top: 50%;
+  transform: translateY(0%);
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   text-align: center;
-  color: rgba(118,108,66,0.44);
-}
-
-.text-on-dark {
   color: rgba(240, 240, 240, 0.7);
-  top: 50%;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
-#one {
+.dark-text {
+  color: rgba(118,108,66,0.44);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button:nth-child(1) {
   width: 20vw;
   height: 20vw;
   left: 9%;
-  top: 4%;
+  top: 2vw;
   z-index: 3;
 }
 
-#two {
+.button:nth-child(2) {
   width: 14.5vw;
   height: 14.5vw;
   z-index: 2;
   left: 1%;
 }
 
-#three {
+.button:nth-child(3) {
   width: 14vw;
   height: 14vw;
   left: -4.5%;
   z-index: 2;
 }
 
-#four {
+.button:nth-child(4) {
   width: 22vw;
   height: 22vw;
   left: -12%;
-  top: 4%;
+  top: 2vw;
   z-index: 3;
 }
 
-#five {
+.button:nth-child(5) {
   width: 17vw;
   height: 17vw;
   left: 2%;
-  top: -2%;
+  top: -1vw;
   z-index: 3;
 }
 
-#six {
+.button:nth-child(6) {
   width: 16vw;
   height: 16vw;
   left: -5%;
-  top: -13%;
+  top: -5vw;
   z-index: 2;
 }
 
-#seven {
+.button:nth-child(7) {
   width: 26vw;
   height: 26vw;
   left: -11.5%;
-  top: -21%;
+  top: -8vw;
   z-index: 1;
 }
 
-#eight {
+.button:nth-child(8) {
   width: 20vw;
   height: 20vw;
   left: -19%;
-  top: -6%;
+  top: -4vw;
   z-index: 1;
 }
