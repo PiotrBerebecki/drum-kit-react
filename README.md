@@ -1,4 +1,4 @@
-Live version: https://piotrberebecki.github.io/drum-kit-react/
+### Live version: https://piotrberebecki.github.io/drum-kit-react/
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
